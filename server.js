@@ -8,7 +8,7 @@ const app = express()
 // Create db connection
 const MongoClient = require('mongodb').MongoClient;
 const ObjectID = require('mongodb').ObjectId;
-const url = "mongodb+srv://admin:admin@cluster0.dabjm.mongodb.net/?retryWrites=true&w=majority";
+const url = "mongodb+srv://jallawia:jallawia@cluster0.hwy5gow.mongodb.net/?retryWrites=true&w=majority";
 let db;
 MongoClient.connect(url, (err, client) => {
   if (err) {

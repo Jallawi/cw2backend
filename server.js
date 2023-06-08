@@ -4,6 +4,12 @@ const express = require('express')
 const cors = require('cors');
 const app = express()
 
+const port = process.env.PORT || 3000
+app.listen(port, () => {
+    console.log("Running on port: ", port);
+})
+
+
 
 // Create db connection
 const MongoClient = require('mongodb').MongoClient;
@@ -103,7 +109,3 @@ app.use(function(req, res){
     res.send("file not found")
 })
 
-const port = process.env.PORT || 3000
-app.listen(port, () => {
-    console.log("Running on port: ", port);
-})
